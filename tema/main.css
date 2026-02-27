@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    [padding: 0;]
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+.menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style: none
+}
+.menu a {
+    position: relative;
+    text-decoration: none;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%;
+    height: 2px;
+    background: blue;
+    transition: 0.3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.login {
+    padding: 10px 20px;   
+    border-radius: 6px;
+    border: 1px solid black;
+    background: green;
+    color: white;
+    cursor: pointer
+
+
+}

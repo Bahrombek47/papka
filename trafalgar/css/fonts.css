@@ -1,0 +1,11 @@
+@font-face {
+    font-family:'inter' ;
+    src: url('../fonts/static/Inter_18pt-Bold.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:'inter' ;
+    src: url('../fonts/static/Inter_24pt-Regular.ttf') format('truetype');
+    font-weight: 400;
+}

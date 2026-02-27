@@ -1,0 +1,526 @@
+body {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+* {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 avto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+}
+.navbar__link {
+    text-decoration: none;
+    transition: 0.3s ;
+    color: #dfdce6;
+}
+
+.navbar__link a:hover {
+    color: #1F1534;
+    font-weight: 700;
+
+}
+
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.title {
+ 
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0%;
+}
+
+.gap {
+    color: #7D7987;
+    font-family: Muli;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    letter-spacing: 0%;
+}
+
+.button {
+    border-radius: 55px;
+    padding: 15px 40px;
+    background:#458FF6;
+    color: #FFFFFF;
+    border: none;
+    transition: 0.4s;
+}
+.button:hover {
+    background: #FFFFFF;
+    color: black;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-radius: 20px;
+    padding-bottom: 71px;
+   
+}
+
+.card1 {
+    width: 350px;
+    height: 354px;
+    border-radius: 20px;
+    background:#ffffff;
+    /* padding: 54px 37px; */
+    padding: 30px 30px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.6s;
+
+}
+
+.card1:hover {
+     box-shadow: 0 0 10px #32333566;
+}
+
+.card2 {
+     width: 350px;
+    height: 354px;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+     border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.6s;
+
+}
+
+.card2:hover:hover {
+     box-shadow: 0 0 10px #32333566;
+}
+
+.card3 {
+     width: 350px;
+    height: 354px;
+    background:#ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+     border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.6s;
+
+}
+
+.card3:hover {
+     box-shadow: 0 0 10px #32333566;
+}
+
+.card4{
+     width: 350px;
+    height: 354px;
+    background:#ffffff;padding: 15px 40px;
+    border-radius: 20px;
+    padding: 30px 30px;
+     border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.6s;
+
+}
+
+.card4:hover {
+     box-shadow: 0 0 10px #32333566;
+}
+
+.card5 {
+     width: 350px;
+    height: 354px;
+    background:#ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+     border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.6s;
+
+}
+
+.card5:hover {
+     box-shadow: 0 0 10px #32333566;
+}
+
+.card6 {
+     width: 350px;
+    height: 354px;
+    background:#ffffff;
+    border-radius: 20px;
+    padding: 30px 30px;
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.6s;
+
+}
+
+.card6:hover {
+     box-shadow: 0 0 10px #32333566;
+}
+
+.about3 {
+    display: flex;
+    align-items: center;
+    gap: 135px;
+    padding-top: 162px;
+}
+hr {
+    border: none;
+    width: 60px;    
+    height: 1px;      
+    background: #000000; 
+    margin: 10px 0;
+}
+
+.providers h3 {
+    font-weight: 700;
+    font-style: Muli;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+    letter-spacing: 0%;
+}
+
+.providers p {
+    font-weight: 300;
+    font-style: Muli;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+    letter-spacing: 0%;
+}
+
+
+.knopka {
+    background: white;
+    border:1px solid black;
+    color: #458FF6;
+    display: flex;
+    gap: 6px;
+    transition: 0.6s;
+    box-shadow: #020100;
+    border-radius: 55px;
+    padding: 15px 40px;
+}
+.knopka:hover {
+    background: rgb(190, 84, 12);
+    border: none;
+}
+
+
+.abour4 {
+    display: flex;
+    gap: 171px;
+    align-items: center;
+    padding-top: 260px;
+}
+
+.about__our h2 {
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+
+.about_our p {
+    padding-bottom: 50px;
+    font-family: Muli;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #7D7987;
+}
+
+
+.about5 {
+   margin-top: 250px;
+   background: linear-gradient(to bottom, #67C3F3, #5A98F2);
+   border-radius:24px ;
+   padding: 60px 120px;
+   color: white;
+}
+
+.about5 h2 {
+    text-align: center;
+}
+
+
+.about__saying-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 71px;
+}
+
+
+.saying__info {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 33px;
+}
+
+
+.about__saying-info p {
+    width: 420px;
+    padding: 0;
+    font-family: Muli;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #FFFFFFE5;
+}
+
+
+.saying__portal h5 {
+    margin: 0;
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #FFFFFFE5;
+}
+
+.saying__portal span {
+     font-family: Mulish;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    color: #FFFFFFD9;
+}
+
+.icons__3 {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 0 avto;
+}
+
+.about6 {
+    margin-top: 200px;
+}
+
+.about6 h2 {
+    text-align: center; 
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.about6 hr {
+    width: 60px;
+    height: 3px;
+    background: black;
+    border: none;
+    margin: 20px auto;
+}
+
+.Card {
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    /* box-shadow: 0 0 10px #E5E9F666; */
+    /* gap: 34px; */
+}
+
+
+
+.card__one {
+    /* border: 1px solid black; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 10px #E5E9F666;
+    transition: 0.7s;
+}
+.card__one:hover{
+    box-shadow: 0 0 10px #0b0c0e66;
+}
+
+.card__c {
+    width: 300px;
+    /* border: 1px solid #ddd; *//
+}
+
+.card__one .Img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.text {
+    width: 251px;
+    padding: 31px;
+}
+
+.text a {
+    font-family: Muli;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #4089ED;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text h3 {
+    font-family: Muli;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    color: #000000;
+}
+
+.text p {
+    font-family: Muli;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    color: #7D7987;
+}
+
+.about6 button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------------------footer----------------------- */
+
+
+
+
+.footer {
+    margin-top: 200px;
+    padding: 40px 190px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, #67C3F3, #5A98F2);
+}
+
+
+.footer__info {
+    width: 391px;
+}
+
+.one {
+    font-size: 20px;
+    font-family:Mulish;
+    line-height: 60px;
+    font-weight: 700;
+    color: #FFFFFF;
+
+}
+
+
+.company__info    {
+    font-size: 18px;
+    font-family:Mulish;
+    line-height: 38px;
+    font-weight: 300;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.company__info a {
+    color: #fff;
+    transition: 0.6s;
+}
+
+.company__info a:hover {
+    color: black;
+}
+
+
+.Region__info    {
+    font-size: 18px;
+    font-family:Mulish;
+    line-height: 38px;
+    font-weight: 300;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.Region__info a {
+    color: #fff;
+    transition: 0.6s;
+}
+
+.Region__info a:hover {
+    color: black;
+}
+
+.Help__info    {
+    font-size: 18px;
+    font-family:Mulish;
+    line-height: 38px;
+    font-weight: 300;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+
+.Help__info a {
+    color: #fff;
+    transition: 0.6s;
+}
+
+
+.Help__info a:hover {
+    color: black;
+}
+
+
+
+.footer__info p {
+    font-size: 18px;
+    font-family:Mulish;
+    line-height: 38px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.footer__info span {
+    font-size: 16px;
+    font-family:Mulish;
+    line-height: 28px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
