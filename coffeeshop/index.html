@@ -1,69 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./main.css">
 </head>
 <body>
+  <header>
+    <div class="container container__nav">
+      <nav class="navbar">
 
-    <header>
-        <div class="container">
-            <div class="header">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+        </ul>
 
-                <ul class="header__link">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Reservation</a></li>
-                </ul>
+      </nav>
 
-                <img src="./img/Logo.svg" alt="sa">
+      <img src="./image/icons/Logo.svg" alt="logo">
 
-                <ul class="header__link">
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><img src="./img/search.svg" alt="sas"></li>
-                    <li><img src="./img/shopping-bag.svg" alt="sas"></li>
-                </ul>
-              
+      <div class="nav">
 
-            </div>
+        <nav class="navbar">
+
+          <ul>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+         
+        </nav>
+
+         <a href="#">
+            <img src="./image/icons/search .svg" alt="search">
+          </a>
+
+           <a href="#">
+            <img src="./image/icons/shopping.svg" alt="shopping">
+          </a>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ----1-section---- -->
+
+  <section class="Hero">
+
+    <div class="container container__hero">
+
+      <div class="container__hero--text">
+        <h1>Enjoy Your Morning Coffee.</h1>
+        <p>The coofee is brewed by fist roasting the green coffee beans over hot coals in brazier. given to Opportunity</p>
+        <a class="btn" href="#">Test Coffee</a>
+      </div>
+
+      <div class="container__hero--play">
+        <img src="./image/play .svg" alt="play">
+        <span style="color: #fff;">Play video</span>
+      </div>
+    </div>
+    
+  </section>
+
+
+  <section class="features">
+  <div class="feature-card">
+    <span class="feature-number">01</span>
+    <h3 class="feature-title">Best Coffee Flavour</h3>
+    <img src="image/Rectangle2.png" alt="Best Coffee Flavour">
+  </div>
+
+  <div class="feature-card">
+    <span class="feature-number">02</span>
+    <h3 class="feature-title">Place to get lost</h3>
+    <img src="image/Rectangle3.png" alt="Place to get lost">
+  </div>
+
+  <div class="feature-card">
+    <span class="feature-number">03</span>
+    <h3 class="feature-title">Proper roasting</h3>
+    <img src="image/Rectangle4.png" alt="Proper roasting">
+  </div>
+</section>
+
+
+
+<section class="history">
+  <div class="container history__inner">
+    <div class="history__images">
+      <div class="history__col history__col--left">
+        <img src="./image/Rectangle 5.png" alt="Coffee 1">
+        <img src="./image/Rectangle6.png" alt="Coffee 2">
+      </div>
+
+      <div class="history__col history__col--center">
+        <img src="./image/Rectangle7.png" alt="Coffee 3">
+      </div>
+    </div>
+
+    <div class="history__card">
+      <span class="history__label">Our history</span>
+      <h2 class="history__title">
+        Create a<br>
+        new story with us
+      </h2>
+      <p class="history__text">
+        Mauris rhoncus in imperdiet placerat. Vestibulum euismod nisl suscipit
+        ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt sed
+        sapien et, facilisis aliquam eros. Nunc ut sollicitudin odio.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="popular-products">
+  <div class="container">
+    <p class="section-subtitle">Popular Product</p>
+    <h2 class="section-title">Coffee popular Product</h2>
+
+    <div class="products-grid">
+      <!-- 1-karta -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="image/Rectangle-11.png" alt="Brazil Coffee Gred">
         </div>
-    </header>
 
-
-
-
-    <main>
-        <div class="container">
-
-            <section class="hero">
-                <div class="hero__morning">
-                    <h1>Enjoy Your Morning Coffee.</h1>
-                    <p>The coofee is brewed by fist roasting the green coffee <br> beans over hot coals in brazier. given to Opportunity</p>
-                    <a href="#">Test Coffee</a>
-                </div>
-                <div class="">
-                    <img src="" alt="">
-                    <span>Play video</span>
-                </div>
-            </section>
-
+        <div class="product-content">
+          <span class="product-category">COFFEE</span>
+          <div class="product-rating">
+            ★★★★★
+          </div>
+          <h3 class="product-name">BRAZIL COFFEE GRED</h3>
+          <p class="product-price">
+            PRICE – <span class="current">$320.00</span>
+            <span class="old">$358</span>
+          </p>
         </div>
-    </main>
 
+        <!-- Hoverda chiqadigan tugma -->
+        <button class="btn-add-cart">Add to cart</button>
+      </article>
 
-
-
-
-    <footer>
-        <div class="container">
-
+      <!-- 2-karta -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="image/Rectangle-11.png" alt="Brazil Coffee Gred">
         </div>
-    </footer>
+
+        <div class="product-content">
+          <span class="product-category">COFFEE</span>
+          <div class="product-rating">
+            ★★★★★
+          </div>
+          <h3 class="product-name">BRAZIL COFFEE GRED</h3>
+          <p class="product-price">
+            PRICE – <span class="current">$320.00</span>
+            <span class="old">$358</span>
+          </p>
+        </div>
+
+        <button class="btn-add-cart">Add to cart</button>
+      </article>
+
+      <!-- 3-karta -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="image/Rectangle-11.png" alt="Brazil Coffee Gred">
+        </div>
+
+        <div class="product-content">
+          <span class="product-category">COFFEE</span>
+          <div.product-card class="product-rating">
+            ★★★★★
+          </div.product-card>
+  
+          <h3 class="product-name"> BRAZIL COFFEE GRED</h3>
+          <p class="product-price">
+            PRICE – <span class="current">$320.00</span>
+            <span class="old">$358</span>
+          </p>
+        </div>
+
+        <button class="btn-add-cart">Add to cart</button>
+      </article>
+    </div>
+
+    <div class="view-all-wrapper">
+      <a href="#" class="btn-view-all">View all product</a>
+    </div>
+  </div>
+</section>
+
+
+<section class="coffee-banner">
+  <div class="coffee-banner__card">
+    <div class="coffee-banner__image-wrap">
+      <img
+        src="./image/blindr.png"
+        alt="Coffee machine"
+        class="coffee-banner__image"
+      />
+    </div>
+
+    <div class="coffee-banner__content">
+      <h2 class="coffee-banner__title">
+        Coffee <br />
+        machine, buy for home
+      </h2>
+
+      <p class="coffee-banner__text">
+        Mauris rhoncus in imperdiet placerat. Vestibulum euismod nisl suscipit
+        ligula volutpat. A feugiat urna maximus. Cras massa nibh tincidunt sed
+        sapien et, facilisis aliquam eros. Nunc ut sollicitudin odio.
+      </p>
+
+      <a href="#" class="coffee-banner__btn">Discover now</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="menu-section">
+  <p class="menu-section__subtitle">Menu</p>
+  <h2 class="menu-section__title">Coffee popular menu</h2>
+
+  <div class="menu-section__grid">
+    <!-- Chap ustun -->
+    <div class="menu-column">
+      <!-- 1-row -->
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-1.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-2.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-3.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-4.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+    </div>
+
+    <!-- O‘ng ustun (rasmlarni almashtirib qo‘yasiz) -->
+    <div class="menu-column">
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-5.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-3.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+
+      <article class="menu-item">
+        <div class="menu-item__left">
+          <img src="./image/cofe/Bg-4.svg" alt="Americano" class="menu-item__image" />
+          <span class="menu-item__name">Americano rostted gred</span>
+        </div>
+        <span class="menu-item__price">$12.00</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="testimonial">
+  <p class="testimonial__subtitle">Testimonial</p>
+  <h2 class="testimonial__title">Says our customers</h2>
+
+  <div class="testimonial__cards">
+    <!-- 1-karta -->
+    <article class="t-card t-card--left">
+      <div class="t-card__media">
+        <img src="./image/yigit.jpg" alt="John Smith" />
+      </div>
+
+      <div class="t-card__body">
+        <p class="t-card__text">
+          Education WP is a special build for effective education &amp; learning
+          management system site. Education WP is the next generation &amp; one of
+          the best education WordPress themes which all the strength of elearning WP.
+        </p>
+
+        <div class="t-card__bottom">
+          <div>
+            <p class="t-card__name">John Smith</p>
+            <p class="t-card__role">Product Designer</p>
+          </div>
+          <div class="t-card__stars">★★★★★</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2-karta -->
+    <article class="t-card t-card--right">
+      <div class="t-card__media">
+        <img src="./image/qiz .jpg" alt="Brett Lee" />
+      </div>
+
+      <div class="t-card__body">
+        <p class="t-card__text">
+          Education WP is a special build for effective education &amp; learning
+          management system site. Education WP is the next generation &amp; one of
+          the best education WordPress themes which all the strength of elearning WP.
+        </p>
+
+        <div class="t-card__bottom">
+          <div>
+            <p class="t-card__name">Brett Lee</p>
+            <p class="t-card__role">User Experience Designer</p>
+          </div>
+          <div class="t-card__stars">★★★★★</div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <!-- Pastki qism: progress + tugmalar -->
+  <div class="testimonial__footer">
+    <div class="t-progress">
+      <span class="t-progress__text">2/6 People</span>
+      <div class="t-progress__bar">
+        <span class="t-progress__bar-fill"></span>
+      </div>
+    </div>
+
+    <div class="t-nav">
+      <button class="t-nav__btn t-nav__btn--prev">
+        <span>←</span>
+      </button>
+      <button class="t-nav__btn t-nav__btn--next">
+        <span>→</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="booking">
+  <div class="booking__card">
+    <!-- Chap: xarita rasmi -->
+   <div class="booking__map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE_HERE"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- O‘ng: forma -->
+    <div class="booking__panel">
+      <p class="booking__subtitle">Reservation</p>
+      <h2 class="booking__title">Booking a table</h2>
+
+      <form class="booking__form">
+        <div class="booking__field">
+          <input type="text" placeholder="4 Person" />
+        </div>
+
+        <div class="booking__field">
+          <input type="text" placeholder="12.25, 2020" />
+        </div>
+
+        <div class="booking__field">
+          <input type="text" placeholder="11:00 AM" />
+        </div>
+
+        <button type="submit" class="booking__btn">Book a table</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="news">
+  <p class="news__subtitle">Testimonial</p>
+  <h2 class="news__title">Our latest news</h2>
+
+  <div class="news__grid">
+    <!-- 1-karta -->
+    <article class="news-card">
+      <div class="news-card__image-wrap">
+        <img src="./image/image.png" alt="Coffee article 1" />
+        <span class="news-card__badge">Coffee</span>
+      </div>
+
+      <div class="news-card__body">
+        <div class="news-card__meta">
+          <span>By: rasaline</span>
+          <span>23.01.2021</span>
+        </div>
+
+        <h3 class="news-card__title">
+          Ideal Cocktails From Barmen...
+        </h3>
+
+        <a href="#" class="news-card__link">
+          Read More
+          <span class="news-card__arrow">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- 2-karta -->
+    <article class="news-card">
+      <div class="news-card__image-wrap">
+        <img src="./image/image-1.png" alt="Coffee article 2" />
+        <span class="news-card__badge">Drinks</span>
+      </div>
+
+      <div class="news-card__body">
+        <div class="news-card__meta">
+          <span>By: rasaline</span>
+          <span>23.01.2021</span>
+        </div>
+
+        <h3 class="news-card__title">
+          Ideal Cocktails From Barmen...
+        </h3>
+
+        <a href="#" class="news-card__link">
+          Read More
+          <span class="news-card__arrow">→</span>
+        </a>
+      </div>
+    </article>
+
+    <!-- 3-karta -->
+    <article class="news-card">
+      <div class="news-card__image-wrap">
+        <img src="./image/image-2.png" alt="Coffee article 3" />
+        <span class="news-card__badge">Latte</span>
+      </div>
+
+      <div class="news-card__body">
+        <div class="news-card__meta">
+          <span>By: rasaline</span>
+          <span>23.01.2021</span>
+        </div>
+
+        <h3 class="news-card__title">
+          Ideal Cocktails From Barmen...
+        </h3>
+
+        <a href="#" class="news-card__link">
+          Read More
+          <span class="news-card__arrow">→</span>
+        </a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="coffee-footer">
+  <div class="coffee-footer__inner">
+    <div class="coffee-footer__logo">
+      <!-- logotip rasm bo‘lsa shu yerga -->
+      <span class="coffee-footer__logo-mark"><img src="./image/Logo (2).svg" alt=""></span>
+      <span class="coffee-footer__logo-text">Coffee House</span>
+    </div>
+
+    <nav class="coffee-footer__nav">
+      <a href="#">Home</a>
+      <a href="#">Reservation</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Pages</a>
+      <a href="#">Shop</a>
+      <a href="#">Blogs</a>
+    </nav>
+
+    <form class="coffee-footer__subscribe">
+      <input type="email" placeholder="Enter Your Email" />
+      <button type="submit">
+        <span>→</span>
+      </button>
+    </form>
+  </div>
+
+  <p class="coffee-footer__copy">
+    © T-cafe 2024. All rights reserved.
+  </p>
+</footer>
+
 
 </body>
 </html>

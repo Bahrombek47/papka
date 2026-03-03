@@ -1,0 +1,1737 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 33px 0;
+    /* position: sticky; */
+    background: rgba(28, 24, 20, 1);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.6s;
+}
+
+.navbar a:hover {
+    color: rgba(201, 158, 113, 1);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 48px;
+}
+
+.navbar li {
+list-style: none;}
+
+.container__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+}
+
+
+/* -------1-+-section------- */
+
+.Hero {
+    background-image: url("./image/Rectangle-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container__hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px 75px;
+}
+
+.container__hero--text {
+    width: 529px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #fff;
+}
+
+.container__hero--text h1 {
+    font-family: Righteous;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 130%;
+}
+
+.container__hero--text p {
+    font-family: Urbanist;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 180%;
+}
+
+.btn {
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 24px 40px;
+    background: rgba(201, 158, 113, 1);
+}
+
+/* .btn:hover {
+    box-shadow: ;
+} */
+
+
+
+
+
+body {
+  background-color: #0f0f0f; /* skrinshotdagidek qora fon */
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+}
+
+.features {
+  max-width: 1100px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.feature-card {
+  background-color: transparent; /* kartochka fonisiz, faqat rasm */
+  text-align: left;
+  color: #ffffff;
+}
+
+.feature-number {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #f5a623; /* sariq rangga o‘xshash */
+  margin-bottom: 4px;
+}
+
+.feature-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* Responsive – telefonlarda ustma-ust bo‘lib qolsin */
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 1fr;
+    max-width: 90%;
+  }
+}
+
+
+
+
+.history {
+  background-color: #0f0f0f;
+  padding: 80px 0;
+}
+
+.history__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.history__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.history__col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.history__col--center img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.history__images img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+.history__card {
+  background-color: #181310;
+  padding: 48px 56px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.history__label {
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c99e71;
+  margin-bottom: 12px;
+}
+
+.history__title {
+  font-family: "Righteous", system-ui, sans-serif;
+  font-size: 32px;
+  line-height: 1.4;
+  margin: 0 0 20px;
+}
+
+.history__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #b7b7b7;
+}
+
+/* Responsiv */
+@media (max-width: 900px) {
+  .history__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* Umumiy body fon va shrift */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0c0a09; /* qora-jigarrang fon */
+  color: #ffffff;
+}
+
+/* Seksiya o‘zi */
+.popular-products {
+  padding: 80px 0;
+  background: #0c0a09;
+}
+
+/* Kichik konteyner */
+.popular-products .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* Bo‘lim sarlavhalari */
+.section-subtitle {
+  color: #fbbf77;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Kartalar grid'i */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Har bir karta */
+.product-card {
+  position: relative;
+  background: #0f0d0b;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 24px 24px 60px; /* pastida tugma uchun joy */
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+  background: #15110d;
+}
+
+/* Rasm bloki */
+.product-image {
+  /* background: #c9864a; */
+  border-radius: 12px;
+  padding: 30px 20px 10px;
+  margin-bottom: 24px;
+}
+
+.product-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Matn qismi */
+.product-content {
+  text-align: left;
+}
+
+.product-category {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #fbbf77;
+}
+
+.product-rating {
+  float: right;
+  font-size: 14px;
+  color: #fbbf77;
+}
+
+.product-name {
+  margin-top: 10px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.product-price {
+  margin: 0;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.product-price .current {
+  color: #fbbf77;
+  font-weight: 600;
+}
+
+.product-price .old {
+  margin-left: 8px;
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Hoverda chiqadigan tugma */
+.btn-add-cart {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  padding: 10px 28px;
+  border-radius: 50px;
+  border: none;
+  background: #fbbf24;
+  color: #1f2933;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+}
+
+/* Kursor kartaga borganda tugma ko‘rinadi */
+.product-card:hover .btn-add-cart {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+.btn-add-cart:hover {
+  background: #f97316;
+  color: #0c0a09;
+}
+
+/* Pastdagi "View all product" tugmasi */
+.view-all-wrapper {
+  margin-top: 40px;
+}
+
+.btn-view-all {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  border: 1px solid #fbbf24;
+  color: #fbbf24;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-view-all:hover {
+  background: #fbbf24;
+  color: #0c0a09;
+  transform: translateY(-2px);
+}
+
+
+
+.product-card {
+  position: relative;
+  padding: 24px 24px 90px; /* ESKI 60px bo‘lsa, 80–100px qilib ko‘paytiring */
+}
+
+/* Tugma */
+.btn-add-cart {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;             /* kartaning eng pastiga yaqin turadi */
+  transform: translateX(-50%);
+  /* qolgan style’lar o‘z holicha */
+}
+
+/* Hover */
+.product-card:hover .btn-add-cart {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(-6px);
+}
+
+/* Responsiv holat (telefonlar uchun) */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* Umumiy fon */
+body {
+  margin: 0;
+  font-family: "Poppins", system-ui, sans-serif;
+  background: #120f0c;
+  color: #ffffff;
+}
+
+/* Seksiya o‘rtada tursin */
+.coffee-banner {
+  padding: 80px 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Katta karta */
+.coffee-banner__card {
+  width: min(960px, 100%);
+  background: #191411;
+  border-radius: 8px;
+  padding: 48px 64px;
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: 40px;
+  align-items: center;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+  position: relative;
+
+  /* Kirish animatsiyasi */
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+  animation: coffee-card-in 0.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* Karta hover animatsiyasi */
+.coffee-banner__card::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background: radial-gradient(
+    circle at 0% 0%,
+    rgba(201, 158, 113, 0.22),
+    transparent 55%
+  );
+  opacity: 0;
+  transform: translateX(-40%);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.coffee-banner__card:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.coffee-banner__card:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.9);
+}
+
+/* Rasm qismi */
+.coffee-banner__image-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.coffee-banner__image {
+  max-width: 260px;
+  width: 100%;
+  filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.9));
+  transform-origin: center bottom;
+
+  /* Rasm “yengil suzib turishi” */
+  animation: coffee-float 4.2s ease-in-out infinite;
+}
+
+.coffee-banner__image-wrap::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  width: 70%;
+  height: 12px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.7),
+    transparent 70%
+  );
+  opacity: 0.8;
+  transform: scale(1);
+}
+
+/* Matn qismi */
+.coffee-banner__content {
+  position: relative;
+  z-index: 1;
+}
+
+.coffee-banner__title {
+  margin: 0 0 18px;
+  font-family: "Righteous", system-ui, sans-serif;
+  font-size: 34px;
+  line-height: 1.4;
+  color: #fdf5ec;
+}
+
+.coffee-banner__text {
+  margin: 0 0 28px;
+  font-size: 14px;
+  line-height: 1.9;
+  color: #d4d4d8;
+  max-width: 420px;
+}
+
+/* Tugma + animatsiya */
+.coffee-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  background: #c99e71;
+  color: #1b120c;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  border-radius: 2px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  transform: translateY(0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.25s ease;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.65);
+}
+
+.coffee-banner__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.35),
+    rgba(255, 255, 255, 0.1)
+  );
+  transform: translateX(-120%);
+  opacity: 0;
+}
+
+.coffee-banner__btn:hover {
+  background: #e0b886;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.8);
+}
+
+/* Tugma ustidan “shimmer” chizig‘i o‘tsin */
+.coffee-banner__btn:hover::before {
+  opacity: 1;
+  animation: coffee-shimmer 0.9s forwards;
+}
+
+/* Responsiv */
+@media (max-width: 800px) {
+  .coffee-banner__card {
+    padding: 32px 24px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .coffee-banner__text {
+    max-width: none;
+  }
+
+  .coffee-banner__image {
+    max-width: 210px;
+  }
+}
+
+/* Animatsiyalar */
+@keyframes coffee-card-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes coffee-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(-1.2deg);
+  }
+}
+
+@keyframes coffee-shimmer {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+
+
+
+.menu-section {
+  padding: 80px 16px 110px;
+  background: #120f0c;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.menu-section__subtitle {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c99e71;
+  margin-bottom: 8px;
+}
+
+.menu-section__title {
+  font-family: "Righteous", system-ui, sans-serif;
+  font-size: 34px;
+  margin: 0 0 48px;
+}
+
+/* Ikki ustunli grid */
+.menu-section__grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 40px;
+}
+
+/* Har bir ustun */
+.menu-column {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Karta (row) */
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 22px;
+  border-radius: 4px;
+  border: 1px solid #26201b;
+  background: #15100c;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  /* kirish animatsiyasi */
+  opacity: 0;
+  transform: translateY(22px);
+  animation: menu-row-in 0.7s ease forwards;
+}
+
+/* Har bir qator biroz kechikib kiradi */
+.menu-column .menu-item:nth-child(1) { animation-delay: 0.05s; }
+.menu-column .menu-item:nth-child(2) { animation-delay: 0.15s; }
+.menu-column .menu-item:nth-child(3) { animation-delay: 0.25s; }
+.menu-column .menu-item:nth-child(4) { animation-delay: 0.35s; }
+
+/* Hover effekti */
+.menu-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(201, 158, 113, 0.18),
+    transparent 40%
+  );
+  opacity: 0;
+  transform: translateX(-40%);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.menu-item:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.menu-item:hover {
+  border-color: #3a2b1d;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.7);
+  transform: translateY(-2px);
+}
+
+/* Chap qism: rasm + nom */
+.menu-item__left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-item__image {
+  width: 64px;
+  height: 64px;
+  border-radius: 4px;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 0.35s ease;
+}
+
+/* Hoverda rasm biroz zoom bo‘ladi */
+.menu-item:hover .menu-item__image {
+  transform: scale(1.06);
+}
+
+.menu-item__name {
+  font-size: 14px;
+}
+
+/* Narx */
+.menu-item__price {
+  font-size: 13px;
+  color: #c99e71;
+  position: relative;
+  padding-left: 10px;
+}
+
+/* Narx yonidan chiziq “o‘sib chiqadi” */
+.menu-item__price::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  width: 32px;
+  height: 1px;
+  background: #2a231e;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.35s ease;
+}
+
+.menu-item:hover .menu-item__price::before {
+  transform: scaleX(1);
+}
+
+/* Responsiv */
+@media (max-width: 900px) {
+  .menu-section__grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+/* Animatsiya definitsiyasi */
+@keyframes menu-row-in {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.testimonial {
+  padding: 90px 16px 110px;
+  background: #120f0c;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.testimonial__subtitle {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #c99e71;
+  margin-bottom: 6px;
+}
+
+.testimonial__title {
+  font-family: "Righteous", system-ui, sans-serif;
+  font-size: 36px;
+  margin: 0 0 50px;
+}
+
+/* Karta container */
+.testimonial__cards {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+  position: relative;
+}
+
+/* Yorug‘lik halqasini beradigan gradient */
+.testimonial__cards::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(
+      circle at 10% 0%,
+      rgba(201, 158, 113, 0.2),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 90% 100%,
+      rgba(201, 158, 113, 0.16),
+      transparent 60%
+    );
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.8s ease;
+}
+
+.testimonial:hover .testimonial__cards::before {
+  opacity: 1;
+}
+
+/* Karta o‘zi */
+.t-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  padding: 26px 28px;
+  border-radius: 8px;
+  background: #1a1410;
+  border: 1px solid #26201b;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.7);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation: t-card-in 0.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.t-card--left { animation-delay: 0.05s; }
+.t-card--right { animation-delay: 0.2s; }
+
+/* Karta ichidagi “glow” chiziq */
+.t-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(201, 158, 113, 0.0),
+    rgba(201, 158, 113, 0.25),
+    rgba(201, 158, 113, 0.0)
+  );
+  transform: translateX(-130%);
+  opacity: 0;
+}
+
+.t-card:hover::before {
+  opacity: 1;
+  animation: t-sheen 0.9s forwards;
+}
+
+.t-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.95);
+  border-color: #3a2b1d;
+}
+
+/* Rasm qismi */
+.t-card__media img {
+  width: 86px;
+  height: 86px;
+  border-radius: 6px;
+  object-fit: cover;
+  filter: saturate(1.1) contrast(1.05);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.9);
+  transform-origin: center;
+  transition: transform 0.45s ease, box-shadow 0.45s ease;
+}
+
+.t-card:hover .t-card__media img {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 1);
+}
+
+/* Matnlar */
+.t-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.t-card__text {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #e5e5e5;
+}
+
+.t-card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.t-card__name {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.t-card__role {
+  margin: 0;
+  font-size: 12px;
+  color: #a1a1aa;
+}
+
+.t-card__stars {
+  font-size: 14px;
+  color: #fbbf24;
+  letter-spacing: 1px;
+  transform-origin: right;
+  transition: transform 0.35s ease;
+}
+
+.t-card:hover .t-card__stars {
+  transform: scale(1.08);
+}
+
+/* Pastki qism */
+.testimonial__footer {
+  max-width: 980px;
+  margin: 26px auto 0;
+  padding: 0 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Progress */
+.t-progress__text {
+  font-size: 12px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.t-progress__bar {
+  width: 140px;
+  height: 3px;
+  background: #26201b;
+  border-radius: 999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.t-progress__bar-fill {
+  display: block;
+  width: 40%; /* 2/6 */
+  height: 100%;
+  background: linear-gradient(90deg, #c99e71, #fbbf77);
+  transform-origin: left;
+  animation: t-progress-fill 1s ease-out forwards;
+}
+
+/* Navigatsiya tugmalari */
+.t-nav {
+  display: flex;
+  gap: 14px;
+}
+
+.t-nav__btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #26201b;
+  background: #15100c;
+  color: #e5e5e5;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.2s ease,
+  box-shadow 0.25s ease;
+}
+
+.t-nav__btn span {
+  font-size: 14px;
+}
+
+.t-nav__btn--next {
+  background: #c99e71;
+  color: #1b120c;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.75);
+}
+
+.t-nav__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.0),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.0)
+  );
+  transform: translateX(-120%);
+}
+
+.t-nav__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.85);
+}
+
+.t-nav__btn:hover::before {
+  animation: t-sheen 0.8s forwards;
+}
+
+/* Responsiv */
+@media (max-width: 880px) {
+  .testimonial__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .t-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ANIMATSIYALAR */
+@keyframes t-card-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes t-sheen {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+@keyframes t-progress-fill {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+
+
+
+.booking {
+  padding: 90px 16px 110px;
+  background: #120f0c;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}
+
+/* Katta karta */
+.booking__card {
+  width: min(980px, 100%);
+  background: #1a1410;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr;
+  overflow: hidden;
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.8);
+  border: 1px solid #26201b;
+  position: relative;
+
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+  animation: booking-in 0.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* Yorug' gradient fon */
+.booking__card::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background:
+    radial-gradient(
+      circle at 0% 0%,
+      rgba(201, 158, 113, 0.3),
+      transparent 55%
+    ),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(201, 158, 113, 0.2),
+      transparent 65%
+    );
+  opacity: 0;
+  transition: opacity 0.7s ease;
+  pointer-events: none;
+}
+.booking__card:hover::before {
+  opacity: 1;
+}
+
+/* Chap tomon – xarita */
+.booking__map {
+  position: relative;
+  overflow: hidden;
+}
+
+.booking__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.85) contrast(1.05);
+  transform-origin: center;
+  transform: scale(1.02);
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+/* Map “suzish” effekti */
+.booking__card:hover .booking__map img {
+  transform: scale(1.06);
+  filter: brightness(0.9) contrast(1.1);
+}
+
+/* O'ng panel */
+.booking__panel {
+  position: relative;
+  padding: 40px 56px;
+  background: rgba(17, 12, 9, 0.96);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+}
+
+.booking__subtitle {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c99e71;
+  margin: 0 0 8px;
+}
+
+.booking__title {
+  font-family: "Righteous", system-ui, sans-serif;
+  font-size: 30px;
+  margin: 0 0 30px;
+}
+
+/* Forma */
+.booking__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.booking__field {
+  position: relative;
+}
+
+.booking__field input {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 2px;
+  border: 1px solid #26201b;
+  background: #15100c;
+  color: #f4f4f5;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.3s ease, background 0.3s ease,
+    box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+/* Placeholder rangi */
+.booking__field input::placeholder {
+  color: #7c7c85;
+  text-transform: capitalize;
+}
+
+/* Fokus animatsiyasi */
+.booking__field input:focus {
+  border-color: #c99e71;
+  background: #18100b;
+  box-shadow: 0 0 0 1px rgba(201, 158, 113, 0.4),
+    0 16px 30px rgba(0, 0, 0, 0.75);
+  transform: translateY(-1px);
+}
+
+/* Input ostida chiziq “o‘sib chiqsin” */
+.booking__field::after {
+  content: "";
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 5px;
+  height: 1px;
+  background: linear-gradient(90deg, #c99e71, transparent);
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+.booking__field:focus-within::after {
+  transform: scaleX(1);
+}
+
+/* Tugma */
+.booking__btn {
+  margin-top: 12px;
+  align-self: flex-start;
+  padding: 12px 34px;
+  border-radius: 2px;
+  border: none;
+  background: #c99e71;
+  color: #1b120c;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.8);
+  transform: translateY(0);
+  transition: transform 0.2s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.booking__btn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.55),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateX(-130%);
+}
+
+
+
+
+.booking__map {
+  position: relative;
+  overflow: hidden;
+}
+
+.booking__map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: brightness(0.8) contrast(1.05); /* qoraroq ko‘rinish */
+  transform-origin: center;
+  transform: scale(1.02);
+  transition: transform 0.8s ease, filter 0.8s ease;
+}
+
+.booking__card:hover .booking__map iframe {
+  transform: scale(1.06);
+  filter: brightness(0.9) contrast(1.1);
+}
+
+/* Hover – tugma “uchib chiqadi” va shimmer */
+.booking__btn:hover {
+  background: #e0b886;
+  transform: translateY(-3px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.95);
+}
+.booking__btn:hover::before {
+  animation: booking-sheen 0.85s forwards;
+}
+
+/* Responsiv */
+@media (max-width: 880px) {
+  .booking__card {
+    grid-template-columns: 1fr;
+  }
+
+  .booking__panel {
+    padding: 28px 22px 34px;
+  }
+}
+
+/* ANIMATSIYALAR */
+@keyframes booking-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.97);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes booking-sheen {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}
+
+
+
+
+/* Seksiyaning umumiy fonini saytda oldin qo‘yganlaringizga moslang */
+.news {
+  padding: 80px 16px 90px;
+  background: #120f0c;
+  color: #ffffff;
+  text-align: center;
+}
+
+.news__subtitle {
+  font-size: 13px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #c99e71;
+  margin-bottom: 6px;
+}
+
+.news__title {
+  font-family: "Righteous", system-ui, sans-serif;
+  font-size: 36px;
+  margin: 0 0 40px;
+}
+
+/* Kartalar grid'i */
+.news__grid {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+/* Karta o‘zi */
+.news-card {
+  background: #1a1410;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #26201b;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+
+  /* kirish animatsiyasi */
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  animation: news-in 0.9s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.news-card:nth-child(1) { animation-delay: 0.05s; }
+.news-card:nth-child(2) { animation-delay: 0.15s; }
+.news-card:nth-child(3) { animation-delay: 0.25s; }
+
+/* Hoverdagi ichki “yorug' chiziq” */
+.news-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(201, 158, 113, 0),
+    rgba(201, 158, 113, 0.25),
+    rgba(201, 158, 113, 0)
+  );
+  transform: translateX(-130%);
+  opacity: 0;
+}
+
+.news-card:hover::before {
+  opacity: 1;
+  animation: news-sheen 0.85s forwards;
+}
+
+.news-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.95);
+  border-color: #3a2b1d;
+}
+
+/* Rasm qismi */
+.news-card__image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.news-card__image-wrap img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transform-origin: center;
+  transform: scale(1.02);
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.news-card:hover .news-card__image-wrap img {
+  transform: scale(1.08);
+  filter: brightness(1.03) contrast(1.08);
+}
+
+/* Kichik badge */
+.news-card__badge {
+  position: absolute;
+  left: 18px;
+  bottom: 16px;
+  padding: 4px 12px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #f9fafb;
+}
+
+/* Matn qismi */
+.news-card__body {
+  padding: 18px 20px 20px;
+}
+
+.news-card__meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #a1a1aa;
+  margin-bottom: 10px;
+}
+
+.news-card__title {
+  font-size: 16px;
+  margin: 0 0 14px;
+}
+
+/* "Read more" */
+.news-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #c99e71;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  position: relative;
+}
+
+.news-card__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(90deg, #c99e71, transparent);
+  transition: width 0.3s ease;
+}
+
+.news-card:hover .news-card__link::after {
+  width: 100%;
+}
+
+.news-card__arrow {
+  transition: transform 0.3s ease;
+}
+.news-card:hover .news-card__arrow {
+  transform: translateX(4px);
+}
+
+/* Responsiv */
+@media (max-width: 960px) {
+  .news__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 640px) {
+  .news__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER */
+.coffee-footer {
+  background: #0b0806;
+  color: #e5e5e5;
+  padding: 32px 16px 18px;
+  font-size: 13px;
+}
+
+.coffee-footer__inner {
+  max-width: 1040px;
+  margin: 0 auto 18px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+/* Logo */
+.coffee-footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.coffee-footer__logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: 1px solid #c99e71;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #c99e71;
+}
+.coffee-footer__logo-text {
+  font-weight: 600;
+}
+
+/* Nav */
+.coffee-footer__nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.coffee-footer__nav a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.25s ease, transform 0.2s ease;
+}
+.coffee-footer__nav a:hover {
+  color: #c99e71;
+  transform: translateY(-1px);
+}
+
+/* Subscribe input */
+.coffee-footer__subscribe {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: #131010;
+  border-radius: 999px;
+  padding: 4px;
+  box-shadow: 0 0 0 1px #26201b;
+  position: relative;
+}
+
+.coffee-footer__subscribe input {
+  border: none;
+  background: transparent;
+  padding: 8px 14px 8px 18px;
+  color: #f5f5f5;
+  font-size: 12px;
+  width: 160px;
+  outline: none;
+}
+.coffee-footer__subscribe input::placeholder {
+  color: #7c7c85;
+}
+
+.coffee-footer__subscribe button {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  border: none;
+  background: radial-gradient(circle at 30% 20%, #fce3b2, #c99e71);
+  color: #1b120c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 12px 26px rgba(201, 158, 113, 0.6);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.coffee-footer__subscribe button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0)
+  );
+  transform: translateX(-130%);
+}
+
+.coffee-footer__subscribe button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(201, 158, 113, 0.8);
+}
+.coffee-footer__subscribe button:hover::before {
+  animation: news-sheen 0.8s forwards;
+}
+
+/* Pastki matn */
+.coffee-footer__copy {
+  max-width: 1040px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 11px;
+  color: #9b9b9b;
+}
+
+/* Responsiv footer */
+@media (max-width: 840px) {
+  .coffee-footer__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .coffee-footer__subscribe input {
+    width: 190px;
+  }
+}
+
+/* ANIMATSIYALAR */
+@keyframes news-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.97);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes news-sheen {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(130%);
+  }
+}

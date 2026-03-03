@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>PechMarket | Animatsiyali Magazin</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <div class="logo">Pech<span>Market</span></div>
+
+      <nav class="nav">
+        <a href="#hero" class="nav__link">Bosh sahifa</a>
+        <a href="#products" class="nav__link">Mahsulotlar</a>
+        <a href="#about" class="nav__link">Biz haqimizda</a>
+        <a href="#contact" class="nav__link">Aloqa</a>
+      </nav>
+
+      <div class="header__icons">
+        <button class="icon-btn" aria-label="Qidiruv">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M10.5 18.5a8 8 0 1 1 0-16 8 8 0 0 1 0 16Z" stroke="currentColor" stroke-width="2"/>
+            <path d="M16.7 16.7 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+        <button class="icon-btn" aria-label="Savatcha">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6.5 9h14l-1.2 7.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.6L5.3 5.5H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z" fill="currentColor"/>
+          </svg>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="hero__tag">Kafolat + yetkazib berish</span>
+          <h1 class="hero__title">
+            Har bir oshxona uchun
+            <span class="hero__rotator" data-words='["Gaz pech","Elektr pech","Duhovka","Mini pech","Air fryer"]'></span>
+          </h1>
+          <p class="hero__subtitle">
+            Dizayni chiroyli, energiya tejamkor va uzoq xizmat qiladigan pechlar. To‘lov: naqd / karta / bo‘lib-bo‘lib.
+          </p>
+          <div class="hero__actions">
+            <a href="#products" class="btn btn--primary">Buyurtma berish</a>
+            <a href="#about" class="btn btn--ghost">Ko‘proq bilish</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number">24 oy</span>
+              <span class="stat__label">Kafolat</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">1 kun</span>
+              <span class="stat__label">Tez yetkazib berish</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">4.9★</span>
+              <span class="stat__label">Mijozlar bahosi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__image-wrapper">
+          <div class="hero__circle hero__circle--main"></div>
+          <div class="hero__circle hero__circle--small"></div>
+          <img
+            src="https://images.pexels.com/photos/298864/pexels-photo-298864.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            class="hero__image"
+            alt="Zamonaviy pech"
+          />
+          <div class="hero__floating-card hero__floating-card--top">
+            <span>Chegirma</span>
+            <strong>-25% gacha</strong>
+          </div>
+          <div class="hero__floating-card hero__floating-card--bottom">
+            <span>O‘rnatib berish</span>
+            <strong>Ustalar bilan</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__tag">Mahsulotlar</span>
+          <h2 class="section__title">Eng mashhur pechlar</h2>
+          <p class="section__subtitle">
+            Uy, kafe yoki oshxona uchun — ishonchli va chiroyli modellardan tanlang.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Kart 1 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge">Yangi</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112602/pexels-photo-4112602.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Elektr pech"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Elektr pech (60L)</h3>
+            <p class="product-card__desc">
+              6 rejim, konveksiya, tez qizish va energiya tejamkor.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">1 890 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Elektr pech (60L)">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 2 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge product-card__badge--hot">Issiq</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112600/pexels-photo-4112600.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Gaz pech"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Gaz pech (4-konforka)</h3>
+            <p class="product-card__desc">
+              Chugun panjara, tez yonish, xavfsizlik klapani bilan.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">2 450 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Gaz pech (4-konforka)">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 3 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge product-card__badge--sale">Chegirma</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112598/pexels-photo-4112598.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Duhovka"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Duhovka (Built-in)</h3>
+            <p class="product-card__desc">
+              Grill, timer, sensor boshqaruv, premium dizayn.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">3 990 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Duhovka (Built-in)">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 4 -->
+          <article class="product-card reveal">
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112596/pexels-photo-4112596.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Mini pech"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Mini pech (35L)</h3>
+            <p class="product-card__desc">
+              Kichik joylar uchun qulay: pishirish + qizdirish + quritish.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">1 190 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Mini pech (35L)">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 5 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge product-card__badge--sale">Aksiya</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112606/pexels-photo-4112606.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Air fryer"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Air fryer (5.5L)</h3>
+            <p class="product-card__desc">
+              Yog‘siz qovurish, 8 dastur, tez va sog‘lom pishirish.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">990 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Air fryer (5.5L)">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 6 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge product-card__badge--hot">Top</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112604/pexels-photo-4112604.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Mikroto‘lqinli pech"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Mikroto‘lqinli pech</h3>
+            <p class="product-card__desc">
+              Defrost + timer + tez qizdirish, uy uchun juda qulay.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">1 350 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Mikroto‘lqinli pech">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 7 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge">Yangi</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112608/pexels-photo-4112608.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Induksion plita"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Induksion plita</h3>
+            <p class="product-card__desc">
+              Sensor boshqaruv, xavfsiz blok, tez isitish va tejash.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">1 590 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Induksion plita">Savatchaga</button>
+            </div>
+          </article>
+
+          <!-- Kart 8 -->
+          <article class="product-card reveal">
+            <div class="product-card__badge product-card__badge--sale">Chegirma</div>
+            <div class="product-card__image-wrapper">
+              <img
+                src="https://images.pexels.com/photos/4112610/pexels-photo-4112610.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Elektr plita"
+                class="product-card__image"
+              />
+            </div>
+            <h3 class="product-card__title">Elektr plita (2 zona)</h3>
+            <p class="product-card__desc">
+              Kichik xonadonlar uchun: ixcham, tez va oson tozalash.
+            </p>
+            <div class="product-card__footer">
+              <span class="product-card__price">790 000 so‘m</span>
+              <button class="btn btn--sm btn--primary js-add-to-cart" data-name="Elektr plita (2 zona)">Savatchaga</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about__content reveal">
+          <span class="section__tag">Biz haqimizda</span>
+          <h2 class="section__title">Nega aynan biz?</h2>
+          <p class="section__subtitle">
+            Biz pechlarni tanlashda eng muhim uchta narsaga e’tibor beramiz: xavfsizlik,
+            sifat va xizmat. Sizga mos modelni maslahat beramiz va tez yetkazib beramiz.
+          </p>
+          <ul class="about__list">
+            <li>Sertifikatlangan mahsulotlar va original kafolat</li>
+            <li>Bo‘lib-bo‘lib to‘lash (qulay shartlar)</li>
+            <li>Yetkazib berish va o‘rnatib berish xizmati</li>
+          </ul>
+        </div>
+
+        <div class="about__image-wrapper reveal">
+          <div class="about__floating about__floating--one">Xizmat: 24 oy kafolat</div>
+          <div class="about__floating about__floating--two">Yetkazish: 1 kunda</div>
+          <img
+            src="https://images.pexels.com/photos/6996048/pexels-photo-6996048.jpeg?auto=compress&cs=tinysrgb&w=1200"
+            alt="Oshxona jihozlari"
+            class="about__image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--dark">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <span class="section__tag section__tag--light">Aloqa</span>
+          <h2 class="section__title section__title--light">
+            Buyurtma qoldiring yoki savol bering
+          </h2>
+          <p class="section__subtitle section__subtitle--light">
+            Telefondan yoki onlayn forma orqali tezda bog‘laning.
+          </p>
+
+          <div class="contact__details">
+            <p><strong>Telefon:</strong> +998 90 123 45 67</p>
+            <p><strong>Manzil:</strong> Toshkent shahri, Chilonzor, 7-mavze</p>
+            <p><strong>Ish vaqti:</strong> 09:00 – 23:00 (har kuni)</p>
+          </div>
+        </div>
+
+        <form id="contactForm" class="contact__form reveal" novalidate>
+          <div class="contact__form-row">
+            <div class="field">
+              <label>Ism familiya</label>
+              <input id="fullName" name="fullName" type="text" required placeholder="Ismingiz" autocomplete="name" />
+            </div>
+            <div class="field">
+              <label>Telefon raqam</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                required
+                placeholder="+998 90 123 45 67"
+                inputmode="tel"
+                autocomplete="tel"
+                pattern="\\+998\\s\\d{2}\\s\\d{3}\\s\\d{2}\\s\\d{2}"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Xabar / buyurtma tafsilotlari</label>
+            <textarea name="message" rows="4" required placeholder="Qaysi pech (model / litr / rang) kerak?"></textarea>
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit">
+            Yuborish
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div class="modal" id="successModal">
+    <div class="modal__backdrop" onclick="closeSuccessModal()"></div>
+    <div class="modal__content">
+      <h3>Rahmat!</h3>
+      <p>Buyurtmangiz qabul qilindi. Tez orada siz bilan bog‘lanamiz.</p>
+      <button class="btn btn--primary" onclick="closeSuccessModal()">Yopish</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 PechMarket. Barcha huquqlar himoyalangan.</span>
+      <span>Made in Uzbekistan</span>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
